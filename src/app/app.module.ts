@@ -12,6 +12,7 @@ import { MovieService } from './movie.service';
 import { ListingComponent } from './listing/listing.component';
 import { EditMovieComponent } from './edit-movie/edit-movie.component';
 import { ShowStarsComponent } from './show-stars/show-stars.component';
+import { StarRatingComponent } from './star-rating/star-rating.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { ShowStarsComponent } from './show-stars/show-stars.component';
     ListingComponent,
     EditMovieComponent,
     ShowStarsComponent,
+    StarRatingComponent,
   ],
   imports: [
     BrowserModule,

@@ -17,13 +17,14 @@
            placeholder="year"
            formControlName="year">
   </mat-form-field>
-  <mat-form-field>
+  <app-star-rating></app-star-rating>
+  <!-- <mat-form-field>
     <mat-select placeholder="Rating"
                 formControlName="rating">
       <mat-option *ngFor="let rating of availableRatings"
                   [value]="rating">{{rating}}</mat-option>
     </mat-select>
-  </mat-form-field>
+  </mat-form-field> -->
 
   <button type="submit"
           mat-raised-button

@@ -1,0 +1,4 @@
+<mat-icon *ngFor="let star of stars, let i = index"
+          (click)="parseStars(i + 1)"
+          (mouseover)="parseStars(i + 1, true)">{{star}}</mat-icon>
+<span>{{value}}</span>
