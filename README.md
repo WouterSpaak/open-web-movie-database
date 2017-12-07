@@ -1,5 +1,7 @@
 # OpenWebMovieDatabase
 
+Demo app to showcase `ControlValueAccessor`s for Open Pizza, 7 December 2017.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.0.
 
 ## Development server
