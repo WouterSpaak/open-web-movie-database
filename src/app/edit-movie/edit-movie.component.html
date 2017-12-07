@@ -1,0 +1,30 @@
+<h2 class="mat-display-1">Now editing {{movie.title}}</h2>
+
+<form [formGroup]="form">
+  <mat-form-field>
+    <input matInput
+           placeholder="title"
+           formControlName="title">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput
+           placeholder="director"
+           formControlName="director">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput
+           placeholder="year"
+           formControlName="year">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select placeholder="Rating"
+                formControlName="rating">
+      <mat-option *ngFor="let rating of availableRatings"
+                  [value]="rating">{{rating}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button type="submit"
+          mat-raised-button
+          (click)="save($event)">SAVE AND RETURN</button>
+</form>

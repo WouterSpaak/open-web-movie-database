@@ -1,0 +1,16 @@
+<mat-card *ngFor="let movie of movies">
+  <mat-card-title>{{movie.title}} ({{movie.year}})</mat-card-title>
+  <mat-card-subtitle>
+    <app-show-stars [rating]="movie.rating"></app-show-stars>
+  </mat-card-subtitle>
+  <mat-card-content>
+    <p>Directed by
+      <strong>{{movie.director}}</strong>
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button
+            (click)="edit(movie.id)"
+            color="accent">EDIT</button>
+  </mat-card-actions>
+</mat-card>
